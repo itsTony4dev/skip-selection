@@ -1,5 +1,5 @@
 import type { Skip } from '../../types/skip';
-import { AlertTriangle, Calendar, CheckCircle, DollarSign } from 'lucide-react';
+import { Calendar, CheckCircle, DollarSign } from 'lucide-react';
 import skipIcon from '../../assets/skip.svg';
 
 interface SkipCardProps {

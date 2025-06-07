@@ -1,6 +1,6 @@
 import SkipSelectionPage from './pages/SkipSelectionPage'
 import './App.css'
-import React, { createContext, useContext, useEffect, useState } from 'react';
+import { createContext, useContext, useEffect, useState } from 'react';
 
 // Theme context for dark/light mode
 const ThemeContext = createContext({
