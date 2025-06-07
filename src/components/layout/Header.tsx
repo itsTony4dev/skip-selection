@@ -54,7 +54,7 @@ export const Header = () => {
         <button
           onClick={toggleTheme}
           aria-label="Toggle dark mode"
-          className="absolute right-2 top-1 flex items-center justify-center w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors shadow"
+          className="absolute right-2 top-1 flex items-center justify-center w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors shadow md:right-0 md:top-1/2 md:-translate-y-1/2"
         >
           {theme === 'dark' ? (
             <Sun className="h-6 w-6 text-yellow-400 transition-transform rotate-0" />
