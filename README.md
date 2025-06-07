@@ -30,6 +30,7 @@ Create a `.env` file in the root directory and add the following:
 
 ```bash
 API_BASE_URL=your_api_endpoint_here
+```
 
 ### Skip Images
 
