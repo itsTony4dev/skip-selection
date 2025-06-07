@@ -1,5 +1,5 @@
 import type { Skip } from '../../types/skip';
-import { Calendar, CheckCircle, DollarSign } from 'lucide-react';
+import { Calendar, CheckCircle, RecycleIcon } from 'lucide-react';
 import skipIcon from '../../assets/skip.svg';
 
 interface SkipCardProps {
@@ -79,7 +79,7 @@ export const SkipCard = ({ skip, isSelected, onSelect }: SkipCardProps) => {
             </div>
           )}
           <div className="flex items-center space-x-3">
-            <DollarSign className="h-5 w-5 text-blue-500 dark:text-blue-400" />
+            <RecycleIcon className="h-5 w-5 text-blue-500 dark:text-blue-400" />
             <span className="text-sm text-gray-700 dark:text-gray-200">
               {skip.allows_heavy_waste ? 'Heavy waste accepted' : 'Standard waste only'}
             </span>
