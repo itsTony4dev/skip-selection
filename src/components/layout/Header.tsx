@@ -15,7 +15,7 @@ export const Header = () => {
   return (
     <div className="bg-white dark:bg-gray-900 shadow-sm border-b border-gray-100 dark:border-gray-800 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex items-center justify-center relative">
-        <nav className="flex justify-center flex-1">
+        <nav className="flex justify-center flex-1 mt-4">
           <ol className="flex items-center gap-2">
             {steps.map((step, index) => (
               <li key={step.label} className="flex items-center">
@@ -54,7 +54,7 @@ export const Header = () => {
         <button
           onClick={toggleTheme}
           aria-label="Toggle dark mode"
-          className="absolute right-0 top-1/2 -translate-y-1/2 flex items-center justify-center w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors shadow"
+          className="absolute right-2 top-1 flex items-center justify-center w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors shadow"
         >
           {theme === 'dark' ? (
             <Sun className="h-6 w-6 text-yellow-400 transition-transform rotate-0" />

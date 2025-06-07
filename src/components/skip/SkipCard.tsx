@@ -12,17 +12,18 @@ export const SkipCard = ({ skip, isSelected, onSelect }: SkipCardProps) => {
 
   return (
     <div
-      className={`relative bg-white dark:bg-gray-900 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer overflow-hidden h-[500px] flex flex-col border border-gray-100 dark:border-gray-800`}
+      className={`relative bg-white dark:bg-gray-900 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer overflow-hidden min-h-[450px] flex flex-col border border-gray-100 dark:border-gray-800`}
       onClick={() => onSelect(skip.id)}
     >
       {/* Skip Image/Icon Area with Bubble Overlay */}
-      <div className="bg-gradient-to-br from-blue-500 to-indigo-600 h-44 flex items-center justify-center relative overflow-hidden">
-        <img src={skipIcon} alt="Skip icon" className="h-20 w-28 mx-auto opacity-90" />
+      <div className="bg-gradient-to-br from-blue-500 to-indigo-600 min-h-[160px] flex items-center justify-center relative overflow-hidden">
+        <img src={skipIcon} alt="Skip icon" className="h-20 w-28 mx-auto opacity-90 -mt-8 sm:-mt-0" />
         <div className="absolute -top-10 -right-10 w-32 h-32 bg-white bg-opacity-10 rounded-full"></div>
         <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-white bg-opacity-10 rounded-full"></div>
         {/* Bubble Overlay */}
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 mb-2 px-6 py-2 rounded-full bg-white bg-opacity-80 shadow text-center flex flex-col items-center">
-          <span className="text-xl font-bold text-blue-700">{skip.size} Yard Skip</span>
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 mb-2 px-4
+         py-2 rounded-full bg-white bg-opacity-80 shadow text-center flex flex-col items-center max-w-[80%] sm:max-w-none">
+          <span className="text-lg sm:text-xl font-bold text-blue-700">{skip.size} Yard Skip</span>
         </div>
       </div>
 
@@ -31,7 +32,7 @@ export const SkipCard = ({ skip, isSelected, onSelect }: SkipCardProps) => {
         {/* Price and Badges Block */}
         <div className="mb-4 space-y-2">
           <div className="flex items-center justify-between">
-            <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">
+            <div className="text-2xl sm:text-3xl font-bold text-blue-600 dark:text-blue-400">
               £{Math.round(skip.price_before_vat)}
             </div>
             <div className="text-sm text-gray-500 dark:text-gray-300">
